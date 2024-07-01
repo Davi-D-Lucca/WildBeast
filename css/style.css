@@ -1,3 +1,9 @@
+@import url(./header.css);
+@import url(./sidenav.css);
+@import url(./footer.css);
+@import url(./anuncios.css);
+@import url(./content.css);
+
 body,
 p,
 h1,
@@ -19,7 +25,9 @@ a {
 }
 
 img {
-  max-width: 100px;
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
 }
 
 /* Grid geral */
@@ -33,22 +41,6 @@ img {
     "footer footer footer";
 }
 
-.header {
-  grid-area: header;
-}
-
-.sidenav {
-  grid-area: sidenav;
-}
-
-.content {
-  grid-area: content;
-}
-
-.anuncios {
-  grid-area: anuncios;
-}
-
-.footer {
-  grid-area: footer;
+.col-wide {
+  grid-column: 1 / -1;
 }
